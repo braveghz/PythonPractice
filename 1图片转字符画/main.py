@@ -2,14 +2,14 @@ from PIL import Image
 import argparse
 
 parser = argparse.ArgumentParser()
-parser.add_argument('-i', '--input', help='Input file')
-parser.add_argument('-o', '--output', help='Output file')
+parser.add_argument('-i', help='Input file')
+parser.add_argument('-o', help='Output file')
 parser.add_argument('--width', type=int, help='width of image', default=50)
 parser.add_argument('--height', type=int, help='height of image', default=50)
 
 args = parser.parse_args()
-input = args.input
-output = args.output
+input = args.i
+output = args.o
 width = args.width
 height = args.height
 
