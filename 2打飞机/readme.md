@@ -15,7 +15,7 @@ sudo pip install pygame
 
 ### Tips
 
-##### pygame
+#### pygame
 
 ```python
 
@@ -23,7 +23,7 @@ pygame.init()	# initialize all imported pygame modules
 pygame.quit()   # uninitialize all pygame modules
 ```
 
-##### Rect
+#### Rect
 
 ```
 Rect(left, top, width, height) -> Rect # 存储坐标的pygame对象
@@ -38,7 +38,7 @@ center, centerx, centery
 size, width, height
 ```
 
-##### display
+#### display
 
 ```python
 
@@ -63,7 +63,7 @@ update(rectangle_list) -> None
 ```
 
 
-##### image
+#### image
 
 ```
 pygame.image.load()   # load new image from a file
@@ -71,7 +71,7 @@ load(filename) -> Surface
 load(fileobj, namehint=””) -> Surface,namehint = original filename
 ```
 
-##### Surface （代码中的screen）
+#### Surface （代码中的screen）
 
 ```
 blit()    # draw one image onto another
@@ -86,13 +86,13 @@ get_rect(**kwargs) -> Rect
 
 ```
 
-##### key
+#### key
 ```
 pygame.key.get_pressed()   # the state of all keyboard buttons
 get_pressed() -> bools     # ==1 则为按下了这个键
 ```
 
-##### sprite
+#### sprite
 
 ```
 pygame.sprite.Group  # A container class to hold and manage multiple Sprite objects.
