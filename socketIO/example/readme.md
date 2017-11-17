@@ -36,3 +36,5 @@ app.py + index.html
 # 运行
 python app.py
 ```
+
+小栗子可以直接跑一下，就看懂了
