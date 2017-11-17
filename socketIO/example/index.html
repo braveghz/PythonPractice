@@ -6,24 +6,24 @@
     <script type="text/javascript" src="//cdn.bootcss.com/socket.io/1.5.1/socket.io.min.js"></script>
     <script type="text/javascript" charset="utf-8">
     $(document).ready(function() {
-        var socket = io.connect();  
+        var socket = io.connect();  //建立连接
 
         socket.on('connect', function() {
             socket.emit('connect_event', {data: 'connected!'});
-        })
+        })  // 向服务器发送 connect_event 事件，数据为data=connected!
 
         socket.on('server_response', function(msg) {
             $('#log').append('<br>' + $('<div/>').text('Received #' + ': ' + msg.data).html());
-        });
+        }); // 监听到服务器的回应 server_response事件，并在浏览器中显示
 
         $('form#emit').submit(function(event) {
                 socket.emit('client_event', {data: $('#emit_data').val()});
                 return false;
-            });
+            });// 向服务器发送 client_event 事件，数据为data=emit_data，即输入的内容
     });
-    
-    </script>   
+    </script>
 </head>
+
 <body>
     <h2>WebSokect</h2>
     <form id="emit" method="POST" action='#'>
