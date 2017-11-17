@@ -4,9 +4,9 @@
 
 app.py + index.html
 
+
 ```
-# 运行
-python app.py
+python app.py   # 运行
 ```
 
 小栗子可以直接跑一下，看下代码，就懂了

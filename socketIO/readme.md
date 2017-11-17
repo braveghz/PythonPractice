@@ -5,7 +5,9 @@ socketIO 学习😝
 
 ## Flask-SocketIO
 
-Flask-Socketio是Socketio的Flask插件。Flask-Socketio基于异步处理各种事件：eventlet、gevent和Flask自带的Werkzeug，这些后面再说。
+Flask-Socketio是Socketio的Flask插件。
+
+Flask-Socketio基于异步处理各种事件：eventlet、gevent和Flask自带的Werkzeug，这些后面再说。
 
 安装
 
@@ -28,7 +30,9 @@ if __name__ == '__main__':
 ```
 
 SocketIO 使用 event 表示客户端和服务端接受到的消息。
+
 客户端使用 Javascript 回调函数处理。
+
 服务器端使用注册函数来处理事件。
 
 举个栗子 🌰 看example
